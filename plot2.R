@@ -19,6 +19,6 @@ t1 <- cbind(DateTime, t1)
 
 
 #2
-png(filename = "plot2.png")
+png(filename = "plot2.png", width = 480, height = 480)
 plot(t1$DateTime, t1$Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

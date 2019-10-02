@@ -18,6 +18,6 @@ DateTime <-strptime(paste(t1$Date, t1$Time, sep=" "),"%d/%m/%Y %H:%M:%S")
 t1 <- cbind(DateTime, t1)
 
 #1
-png(filename = "plot1.png")
+png(filename = "plot1.png", width = 480, height = 480)
 hist(t1$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()

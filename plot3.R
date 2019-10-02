@@ -19,7 +19,7 @@ t1 <- cbind(DateTime, t1)
 
 
 #3
-png(filename = "plot3.png")
+png(filename = "plot3.png", width = 480, height = 480)
 with(t1, {
   plot(Sub_metering_1 ~ DateTime, type = "l", 
        ylab = "Global Active Power (kilowatts)", xlab = "")
